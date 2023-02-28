@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Phone Selling</title>
+	<link rel="stylesheet" type="text/css" href="css/p.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+</head>
+<body>
+	<header>
+		<h1>Online Phone Selling</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="slider"><div class="slider_container">
+			<div class="flexslider">
+			  <ul class="slides">
+				<li>
+					<a href="http://www.freshdesignweb.com"><img src="image/google.jpg" alt="" title=""/></a>
+					<div class="flex-caption">
+						 <div class="caption_title_line"><h2>Party Hairstyles</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p></div>
+					</div>
+				</li>
+				<li>
+					<a href="http://www.freshdesignweb.com"><img src="image/iphone.jpg" alt="" title=""/></a>
+					<div class="flex-caption">
+						 <div class="caption_title_line"><h2>Beautiful Hairstyle</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
+					</div>
+				</li>
+				<li>
+					<a href="http://www.freshdesignweb.com"><img src="image/samsung.jpg" alt="" title=""/></a>
+					<div class="flex-caption">
+						 <div class="caption_title_line"><h2>Party Dresses</h2><p>If you are looking for something a little special for your big night out, check out Rare London's collection of stunning party dresses</p></div>
+					</div>
+				</li>
+				<li>
+					<a href="http://www.freshdesignweb.com"><img src="image/samsung.jpg" alt="" title=""/></a>
+					<div class="flex-caption">
+						 <div class="caption_title_line"><h2>Bodycon Dresses</h2><p>The bodycon dress is a key silhouette for this season's party girl; from sleek colour-block panelling to geometric prints the bodycon.</p></div>
+					</div>
+				</li>
+			</ul>
+		  </div>
+	   </div>
+		</div> </div>
+		<section id="products">
+			<h2>Our Products</h2>
+			<ul>
+				<li>
+					<img src="image/iphone.jpg" alt="iPhone 12">
+					<h3>iPhone 12</h3>
+					<p>Price: $999</p>
+					<button>Add to Cart</button>
+				</li>
+				<li>
+					<img src="image/samsung.jpg" alt="Samsung S21">
+					<h3>Samsung S21</h3>
+					<p>Price: $899</p>
+					<button>Add to Cart</button>
+				</li>
+				<li>
+					<img src="image/google.jpg" alt="Google Pixel 5">
+					<h3>Google Pixel 5</h3>
+					<p>Price: $699</p>
+					<button>Add to Cart</button>
+				</li>
+			</ul>
+		</section>
+		<aside>
+			<h2>Shopping Cart</h2>
+			<ul id="cart">
+			</ul>
+			<button id="checkout">Checkout</button>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2023 Online Phone Selling</p>
+	</footer>
+</body>
+</html>
